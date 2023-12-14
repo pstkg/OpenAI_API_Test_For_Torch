@@ -1,0 +1,33 @@
+
+{% block content %}
+<div>
+	<div>
+	
+	<h3>How can I assist You?</h3>
+	{% for i in AI_answer %}
+		<br/>
+		{{i}}
+	</br>
+	
+		<br/>
+		
+	
+		
+	
+
+		
+
+		
+	{% endfor %}
+	</div>
+<br/>
+	<div>
+		<form action ="ConAI">
+			<input type = "text" name='msg' placeholder = 'Type here'>
+			<input type = "submit">
+
+		</form>
+	</div>
+</div> 
+
+{% endblock %}
